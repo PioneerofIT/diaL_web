@@ -1,15 +1,22 @@
+<!-- src/App.vue -->
+
 <template>
-  <div>
-    안녕하세요 테스트 페이지 입니다
+  <div id="app">
+    <Menu />
   </div>
 </template>
 
 <script>
+import Menu from "./components/AppMenu.vue";
+
 export default {
-  name: 'TestPage',
-}
+  name: "App",
+  components: {
+    Menu
+  }
+};
 </script>
 
-<style scoped>
-/* 원하는 스타일링을 추가하세요 */
+<style>
+/* 원하는 전역 스타일링 */
 </style>
